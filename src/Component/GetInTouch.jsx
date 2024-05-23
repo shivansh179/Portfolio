@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaGithub, FaFacebook, FaInstagram, FaTwitter,FaLinkedin } from "react-icons/fa";
+import { FaGithub, FaInstagram, FaTwitter,FaLinkedin } from "react-icons/fa";
 import { SiGeeksforgeeks } from "react-icons/si";
 
 import emailjs from 'emailjs-com';
