@@ -20,12 +20,14 @@ const Intro = () => {
       </header>
       <main className="flex flex-col md:flex-row justify-around items-center mt-8 space-y-8 md:space-y-0 md:space-x-8">
         <div className="text-center md:text-left">
-          <h2 className="text-4xl font-bold">HI, I'M A Web Developer</h2>
-          <h1 className="text-6xl font-bold">DEVELOPER</h1>
+          <h2 className="text-4xl font-bold">HI, I'M A Web </h2>
+          <h1 className="text-6xl font-bold">DEVELOPER </h1>
+          {/* <h1 className="text-6xl font-bold">and </h1>
+          <h1 className="text-6xl font-bold">DESIGNER</h1> */}
           <p className="text-xl mt-4">based in India, Delhi.</p>
           <div className="space-x-4 mt-4">
-            <button className="bg-black text-white px-4 py-2 rounded">View My Works</button>
-            <button className="border border-black px-4 py-2 rounded">Contact Me</button>
+            <Link to='detailed-projects' smooth={true} ><button className="bg-black text-white px-4 py-2 rounded">View My Works</button></Link>
+            <Link to='get-in-touch' smooth={true}><button className="border border-black px-4 py-2 rounded">Contact Me</button></Link>
           </div>
         </div>
         <img 

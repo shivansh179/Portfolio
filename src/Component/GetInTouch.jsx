@@ -1,5 +1,7 @@
 import React from 'react';
 import { FaGithub, FaFacebook, FaInstagram, FaTwitter,FaLinkedin } from "react-icons/fa";
+import { SiGeeksforgeeks } from "react-icons/si";
+
 import emailjs from 'emailjs-com';
 import toast, { Toaster } from 'react-hot-toast';
 
@@ -45,7 +47,8 @@ const ContactInfo = () => {
         <a href="https://www.linkedin.com/in/shivansh-shukla-01a139234/" target='blank'><FaLinkedin className='text-4xl'  /></a>
         <a href="https://www.instagram.com/shuklajiii_25/?next=https%3A%2F%2Fwww.instagram.com%2Freels%2FC52NnCrPORm%2F%3F__coig_login%3D1" target='blank'><FaInstagram className='text-4xl'  /></a>
         <a href="https://x.com/Shivansh751829" target='blank'><FaTwitter className='text-4xl'  /></a>
-        <FaFacebook className='text-4xl'  />
+        <a href="https://www.geeksforgeeks.org/user/shivansh_shukla7935/?utm_source=geeksforgeeks&utm_medium=my_profile&utm_campaign=auth_user" target='blank'><SiGeeksforgeeks className='text-4xl'  /></a>
+        
         
         
       </div>

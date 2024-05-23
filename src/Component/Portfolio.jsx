@@ -37,9 +37,9 @@ const FilterOptions = () => {
 const Projects = () => {
   // Replace with your actual project data
   const projects = [
-    { id: 1, image: disney, title: 'Clock Project', link: 'https://disney-4cmk.vercel.app/' },
-    { id: 2, image: fintech, title: 'Lightbulb Project', link:'https://fintech-beige-seven.vercel.app/' },
-    { id: 3, image: aqi, title: 'Satellite Project', link:'https://air-pollution-analyzer.vercel.app/' },
+    { id: 1, image: disney, title: 'Disney', link: 'https://disney-4cmk.vercel.app/' },
+    { id: 2, image: fintech, title: 'Finctech', link:'https://fintech-beige-seven.vercel.app/' },
+    { id: 3, image: aqi, title: 'Aqi', link:'https://air-pollution-analyzer.vercel.app/' },
     { id: 3, image: 'satellite.jpg', title: 'Satellite Project' },
   ];
 

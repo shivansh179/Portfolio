@@ -7,45 +7,39 @@ import Skills from "./Component/Skills.jsx";
 import HireMe from './Component/HireMe.jsx'
 import GetInTouch from './Component/GetInTouch.jsx'
 import 'bootstrap/dist/css/bootstrap.min.css';
-
+import './Abut.scss'
 
 
 function App() {
   return (
-    <div className="bg-pale-yellow h-screen">
+    <div className="bg-pale-yellow h-screen" id="one">
      <Intro/>
+     <section id="AboutUs" className="min-h-screen bg-gray-100 p-8">
+        <AboutUs/>
+      </section>
      <Project/>
      <section id="resume" className="min-h-screen bg-gray-100 p-8">
-        <h2 className="text-3xl font-bold">Resume</h2>
-        <Resume/>      
+         <Resume/>      
       </section>
 
-     <section id="AboutUs" className="min-h-screen bg-gray-100 p-8">
-        <h2 className="text-3xl font-bold">About</h2>
-       <AboutUs/>
-      </section>
 
      <section id="skills" className="min-h-screen bg-gray-100 p-8">
-        <h2 className="text-3xl font-bold">Skill</h2>
-        <Skills/>
+         <Skills/>
       </section>
 
      <section id="detailed-projects" className="min-h-screen bg-gray-100 p-8">
-        <h2 className="text-3xl font-bold">Detailed Project</h2>  
-      <Portfolio/>
+       <Portfolio/>
       </section>
 
      <section id="hire-me" className="min-h-screen bg-gray-100 p-8">
-        <h2 className="text-3xl font-bold">Detailed Project</h2>  
-      
+       
      <HireMe/>
       </section>
 
 
 
      <section id="get-in-touch" className="min-h-screen bg-gray-100 p-8">
-        {/* <h2 className="text-3xl font-bold">Get In Touch</h2>   */}
-     <GetInTouch/>
+      <GetInTouch/>
      
       </section>
 

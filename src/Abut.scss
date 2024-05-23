@@ -1,0 +1,114 @@
+#one{
+    
+    #AboutUs{
+            #jai{
+                    display: flex;
+                    flex-direction: column;
+                   gap: 130px;
+                    align-items: center;
+                    
+                    
+
+
+                    .upper{
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        .about{
+                            color: rgb(234 179 8 );
+                            font-size: 35px;
+                            font-weight: 500;
+                        }
+
+                        .know{
+                            font-size: 50px;
+                            font-weight: 600;
+                            color: dark black;
+                        }
+                    }
+                    .mid{
+                        display: flex;
+                        align-items: center;
+                        gap: 190px;
+                        flex-direction: row;
+
+                        .detail{
+                            width: 600px;
+
+                            .intro{
+                                font-size: 30px;
+                                font-weight: bold;
+                                span{
+                                    font-size: 40px;
+                                    font-weight: bolder;
+                                    color: rgb(234 179 8 );
+                                }
+                            }
+
+                            .about{
+                                font-size: 20px;
+                                font-weight: 500;
+                            }
+                        }
+
+                        .experience{
+                            display: flex;
+                            flex-direction: column;
+                            width: 300px;
+                            align-items: center;
+
+                            
+
+                            .number{
+                                height: 120px;
+                                width: 120px;
+                                border-radius: 100%;
+                                background-color: rgb(234 179 8 );
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                font-size: 190px;
+                                // font-weight: bolder;
+                                color: rgb(0, 0, 0);
+                            }
+
+                            .years{
+                                font-size: 20px;
+                                font-weight: 500;
+                                margin-top: 40px;
+                            }
+                        }
+                    }
+
+                    .footer{
+                        display: flex;
+                        flex-direction: row;
+                        gap: 100px;
+
+                        .name{
+                            font-size: 20px;
+                                font-weight: 500;
+                        }
+                        .email{
+                            font-size: 20px;
+                                font-weight: 500;
+                                a{
+                                    font-size: large;
+                                    color: blue;
+                                }
+                        }
+
+                        .dob{
+                            font-size: 20px;
+                                font-weight: 500;
+                        }
+
+                        .address{
+                            font-size: 20px;
+                                font-weight: 500;
+                        }
+                    }
+                }
+    }
+
+}
