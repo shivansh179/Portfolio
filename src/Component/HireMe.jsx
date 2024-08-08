@@ -19,7 +19,7 @@ const CallToAction = () => {
        <h1 className="text-4xl font-bold text-white mb-4">Interested in working with me?</h1>
      </div>
      <Link to="get-in-touch" 
-       smooth={true} ><button className="px-8 py-4 bg-yellow-500 text-white font-bold rounded-full relative" >Hire Me!</button></Link>
+       smooth={true} ><button className="px-8 py-4 bg-teal-700 text-white font-bold rounded-full relative" >Hire Me!</button></Link>
    </div>
   );
 };

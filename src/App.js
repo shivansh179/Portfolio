@@ -7,23 +7,22 @@ import Skills from "./Component/Skills.jsx";
 import HireMe from './Component/HireMe.jsx'
 import GetInTouch from './Component/GetInTouch.jsx'
 import 'bootstrap/dist/css/bootstrap.min.css';
-import './Abut.scss'
-
+ 
 
 function App() {
   return (
-    <div className="bg-pale-yellow h-screen" id="one">
+    <div className="bg-teal-700 h-screen" id="one">
      <Intro/>
-     <section id="AboutUs" className="min-h-screen bg-gray-100 p-8">
+     <section id="AboutUs" className="  bg-gray-100 p-8">
         <AboutUs/>
       </section>
      <Project/>
-     <section id="resume" className="min-h-screen bg-gray-100 p-8">
+     <section id="resume" className="  bg-gray-100 p-8">
          <Resume/>      
       </section>
 
 
-     <section id="skills" className="min-h-screen bg-gray-100 p-8">
+     <section id="skills" className="  bg-gray-100 p-8">
          <Skills/>
       </section>
 

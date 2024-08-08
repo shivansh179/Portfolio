@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-scroll';
-import logo from '../Images/shivansh.png';
+import logo from '../Images/avatar me.jpg';
 
 const Intro = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -10,7 +10,7 @@ const Intro = () => {
   };
 
   return (
-    <div className="min-h-screen bg-yellow-500 flex flex-col gap-8 p-4 relative">
+    <div className="min-h-screen bg-teal-700 flex flex-col gap-8 p-4 relative">
       <header className="w-full flex justify-between items-center px-4 md:px-8 max-w-6xl mx-auto">
         <h1 className="text-xl md:text-2xl font-bold">PORTFOLIO</h1>
         <div className="space-x-4 flex items-center">
@@ -18,7 +18,7 @@ const Intro = () => {
           <button className="text-xl md:hidden" onClick={toggleMenu}>☰</button>
         </div>
       </header>
-      <main className="flex flex-col md:flex-row justify-around items-center mt-8 space-y-8 md:space-y-0 md:space-x-8 max-w-6xl mx-auto text-center md:text-left">
+      <main className="flex flex-col md:flex-row justify-around items-center mt-8 space-y-8 md:space-y-0 md:space-x-8 max-w-6xl mx-auto text-center md:text-left md:gap-44">
         <div className="w-full md:w-1/2">
           <h2 className="text-3xl md:text-4xl font-bold">HI, I'M A Web</h2>
           <h1 className="text-4xl md:text-6xl font-bold">DEVELOPER</h1>
@@ -48,6 +48,7 @@ const Intro = () => {
         <Link to="detailed-projects" smooth={true} duration={500} className="text-white text-2xl cursor-pointer" onClick={toggleMenu}>Detailed Projects</Link>
         <Link to="get-in-touch" smooth={true} duration={500} className="text-white text-2xl cursor-pointer" onClick={toggleMenu}>Hire Me</Link>
         <Link to="get-in-touch" smooth={true} duration={500} className="text-white text-2xl cursor-pointer" onClick={toggleMenu}>Get In Touch</Link>
+        <Link to="#" onClick={toggleMenu} className="text-white text-2xl cursor-pointer">Close</Link>
       </nav>
     </div>
   );
