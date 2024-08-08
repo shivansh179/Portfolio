@@ -1,50 +1,38 @@
 import React from 'react';
-// import logo from '../Images/shivansh.png'
-import disney from '../Images/disney.jpg'
-import fintech from '../Images/finctech.jpg'
-import aqi from '../Images/aqi.jpg'
+import disney from '../Images/disney.jpg';
+import fintech from '../Images/finctech.jpg';
+import aqi from '../Images/aqi.jpg';
 
 const Portfolio = () => {
   return (
     <div className="portfolio bg-gray-100 min-h-screen p-8">
       <Header />
-      <FilterOptions />
-      <Projects />
+       <Projects />
     </div>
   );
 };
 
 const Header = () => {
   return (
-    <div className="header mb-4">
-      <h1 className="text-4xl font-bold text-gray-800">Portfolio</h1>
-      <h2 className="text-2xl text-gray-600">Some of my most recent projects</h2>
-    </div>
+    <div className="flex flex-col items-center justify-center header mb-4">
+    <h1 className="text-4xl font-bold text-gray-800 md:text-5xl">Portfolio</h1>
+    <h2 className="text-2xl text-gray-600 mt-2">Some of my most recent projects</h2>
+  </div>
+  
   );
 };
 
-const FilterOptions = () => {
-  const options = ['All', 'Details', 'Mockups', 'Youtube Videos', 'Vimeo Videos'];
-  return (
-    <div className="filter-options flex space-x-4 mb-8">
-      {options.map((option, index) => (
-        <button key={index} className="px-4 py-2 bg-gray-200 rounded hover:bg-gray-300">{option}</button>
-      ))}
-    </div>
-  );
-};
-
+ 
 const Projects = () => {
   // Replace with your actual project data
   const projects = [
     { id: 1, image: disney, title: 'Disney', link: 'https://disney-4cmk.vercel.app/' },
-    { id: 2, image: fintech, title: 'Finctech', link:'https://fintech-beige-seven.vercel.app/' },
-    { id: 3, image: aqi, title: 'Aqi', link:'https://air-pollution-analyzer.vercel.app/' },
-    { id: 3, image: 'satellite.jpg', title: 'Satellite Project' },
-  ];
+    { id: 2, image: fintech, title: 'Finctech', link: 'https://fintech-beige-seven.vercel.app/' },
+    { id: 3, image: aqi, title: 'Aqi', link: 'https://air-pollution-analyzer.vercel.app/' },
+   ];
 
   return (
-    <div className="projects grid grid-cols-3 gap-4">
+    <div className="projects grid sm:grid-cols-2 md:grid-cols-3 gap-4">
       {projects.map((project) => (
         <Project key={project.id} project={project} />
       ))}
@@ -54,12 +42,17 @@ const Projects = () => {
 
 const Project = ({ project }) => {
   return (
-    <div className="project relative">
+    <div className="project relative rounded shadow">
       <a href={project.link} target="_blank" rel="noopener noreferrer">
-      <img src={project.image} alt={project.title} className="w-full h-64 object-cover rounded shadow" />
-      <div className="overlay absolute inset-0 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity duration-300 bg-black bg-opacity-50">
-        <button className="px-4 py-2 bg-white text-black rounded">View Details</button>
-      </div></a>
+        <img
+          src={project.image}
+          alt={project.title}
+          className="w-full h-64 object-cover rounded"
+        />
+        <div className="overlay absolute inset-0 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity duration-300 bg-black bg-opacity-50">
+          <button className="px-4 py-2 bg-white text-black rounded">View Details</button>
+        </div>
+      </a>
     </div>
   );
 };
