@@ -21,7 +21,7 @@ const ContactPage = () => {
   };
 
   return (
-    <div className="contact-page bg-teal-700 min-h-screen p-8 flex flex-wrap justify-center items-center">
+    <div className="contact-page bg-teal-700 min-h-screen  mt-5 flex flex-wrap justify-center items-center">
       <ContactInfo />
       <EstimateForm sendEmail={sendEmail} />
     </div>
@@ -30,7 +30,7 @@ const ContactPage = () => {
 
 const ContactInfo = () => {
   return (
-    <div className="contact-info w-full md:w-1/2 px-4 mb-8 flex flex-col gap-56">
+    <div className="contact-info w-full md:w-1/2 px-4 gap-20 mb-8  flex flex-col md:gap-56">
       <div>
         <Toaster />
         <h1 className="text-4xl font-bold text-white mb-4">Let's get in touch</h1>
@@ -40,7 +40,7 @@ const ContactInfo = () => {
         <p className="text-white mb-4">Living In: Malikanput, Veerbhanpur, Jaunpur 222109</p>
         <p className="text-white">Call: (+91) 6387427935</p>
       </div>
-      <div className="flex flex-row gap-10 flex-wrap md:flex-row"> {/* Added flex-wrap for smaller screens */}
+      <div className="flex flex-row md:gap-10 gap-3  flex-wrap md:flex-row"> {/* Added flex-wrap for smaller screens */}
         <a href="https://github.com/shivansh179" target="blank"><FaGithub className="text-4xl" /></a>
         <a href="https://www.linkedin.com/in/shivansh-shukla-01a139234/" target="blank"><FaLinkedin className="text-4xl" /></a>
         <a href="https://www.instagram.com/shuklajiii_25/?next=https%3A%2F%2Fwww.instagram.com%2Freels%2FC52NnCrPORm%2F%3F__coig_login%3D1" target="blank"><FaInstagram className="text-4xl" /></a>
@@ -53,7 +53,7 @@ const ContactInfo = () => {
 
 const EstimateForm = ({ sendEmail }) => {
   return (
-    <div className="estimate-form w-full md:w-1/2 px-4">
+    <div className="estimate-form w-max md:w-1/2 px-4">
       <h1 className="text-4xl font-bold text-white mb-4">Estimate your Project</h1>
       <form className="space-y-4" onSubmit={sendEmail}>
         <div>
@@ -68,7 +68,7 @@ const EstimateForm = ({ sendEmail }) => {
           <label htmlFor="message" className="block text-white mb-2">How can I help you?:</label>
           <textarea id="message" name="message" className="w-full p-2 border border-gray-300 rounded" rows="4" required></textarea>
         </div>
-        <button type="submit" className="px-8 py-4 bg-white text-black font-bold md:w-32 rounded-full">Send</button>
+        <button type="submit" className="px-10 py-3 bg-white text-black font-bold md:w-32 rounded-full">Send</button>
       </form>
     </div>
   );

@@ -5,7 +5,7 @@ const AboutUs = () => {
     <div id="jai" className="flex flex-col items-center ">
       <div className="flex flex-col items-center">
         <p className="text-3xl font-medium text-teal-700">About Me</p>
-        <p className="text-5xl font-bold text-black">Know Me More</p>
+       <p className="text-5xl font-bold text-black">Know Me More</p>
       </div>
 
       <div className="flex items-center md:flex-row flex-col ">
