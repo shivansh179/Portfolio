@@ -104,7 +104,7 @@ const Project = React.memo(({ project, index }) => {
       style={{ willChange: 'transform, opacity' }}
     >
       <a href={project.link} target="_blank" rel="noopener noreferrer">
-        <p className='border-3 bg-teal-700 font-bold text-white  w-56 rounded-md'>{project.title}</p>
+        <p className='border-3 pl-4 bg-teal-700 font-bold text-white  w-56 rounded-md'>{project.title}</p>
         <img
           src={project.image}
           alt={project.title}

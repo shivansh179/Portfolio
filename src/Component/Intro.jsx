@@ -23,7 +23,7 @@ const Intro = () => {
           <h2 className="text-3xl md:text-4xl font-bold">HI, I'M A Web</h2>
           <h1 className="text-4xl md:text-6xl font-bold">DEVELOPER</h1>
           <p className="text-lg md:text-xl mt-4">based in India, Delhi.</p>
-          <div className="md:space-x-4 mt-4 flex flex-col md:flex-row items-center md:justify-start">
+          <div className="md:space-x-4 gap-4 mt-4 flex flex-col md:flex-row items-center md:justify-start">
             <Link to="detailed-projects" smooth={true}>
               <button className="bg-black text-white px-4 py-2 rounded w-full md:w-auto">View My Works</button>
             </Link>
