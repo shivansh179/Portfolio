@@ -7,6 +7,7 @@ import Skills from "./Component/Skills.jsx";
 import HireMe from './Component/HireMe.jsx'
 import GetInTouch from './Component/GetInTouch.jsx'
 import 'bootstrap/dist/css/bootstrap.min.css';
+import Author from "./Component/Author.jsx";
  
 
 function App() {
@@ -40,7 +41,7 @@ function App() {
 
      <section id="get-in-touch" className="bg-gray-100  w-full">
       <GetInTouch/>
-     
+      <Author/>
       </section>
 
     </div>

@@ -33,8 +33,8 @@ const Skills = () => {
             <span className="mb-2 text-teal-700">{skill.name}</span>
             <ProgressBar
               now={skill.progress}
-              label={`${skill.progress}%`}
-              className="w-full" // Added bg-teal-700 for progress bar color
+               variant='success'
+              className="w-full"  
             />
           </div>
         ))}

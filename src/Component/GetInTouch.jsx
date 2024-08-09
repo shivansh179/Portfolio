@@ -41,11 +41,11 @@ const ContactInfo = () => {
         <p className="text-white">Call: (+91) 6387427935</p>
       </div>
       <div className="flex flex-row md:gap-10 gap-3  flex-wrap md:flex-row"> {/* Added flex-wrap for smaller screens */}
-        <a href="https://github.com/shivansh179" target="blank"><FaGithub className="text-4xl" /></a>
-        <a href="https://www.linkedin.com/in/shivansh-shukla-01a139234/" target="blank"><FaLinkedin className="text-4xl" /></a>
-        <a href="https://www.instagram.com/shuklajiii_25/?next=https%3A%2F%2Fwww.instagram.com%2Freels%2FC52NnCrPORm%2F%3F__coig_login%3D1" target="blank"><FaInstagram className="text-4xl" /></a>
-        <a href="https://x.com/Shivansh751829" target="blank"><FaTwitter className="text-4xl" /></a>
-        <a href="https://www.geeksforgeeks.org/user/shivansh_shukla7935/?utm_source=geeksforgeeks&utm_medium=my_profile&utm_campaign=auth_user" target="blank"><SiGeeksforgeeks className="text-4xl" /></a>
+        <a href="https://github.com/shivansh179" target="blank"><FaGithub className="text-4xl text-black" /></a>
+        <a href="https://www.linkedin.com/in/shivansh-shukla-01a139234/" target="blank"><FaLinkedin className="text-4xl text-black" /></a>
+        <a href="https://www.instagram.com/shuklajiii_25/?next=https%3A%2F%2Fwww.instagram.com%2Freels%2FC52NnCrPORm%2F%3F__coig_login%3D1 " target="blank"><FaInstagram className="text-4xl text-black" /></a>
+        <a href="https://x.com/Shivansh751829" target="blank"><FaTwitter className="text-4xl text-black" /></a>
+        <a href="https://www.geeksforgeeks.org/user/shivansh_shukla7935/?utm_source=geeksforgeeks&utm_medium=my_profile&utm_campaign=auth_user" target="blank"><SiGeeksforgeeks className="text-4xl text-black" /></a>
       </div>
     </div>
   );

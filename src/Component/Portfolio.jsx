@@ -71,6 +71,8 @@ const Project = ({ project }) => {
   return (
     <div className="project relative rounded shadow">
       <a href={project.link} target="_blank" rel="noopener noreferrer">
+        <p className='font-bold text-teal-800 underline'>{project.title}</p>
+        
         <img
           src={project.image}
           alt={project.title}
