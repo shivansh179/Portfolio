@@ -1,6 +1,5 @@
 import React from 'react';
-import { motion, useAnimation } from 'framer-motion';
-import { useInView } from 'react-intersection-observer';
+import { motion } from 'framer-motion';
 import disney from '../Images/disney.jpg';
 import fintech from '../Images/finctech.jpg';
 import aqi from '../Images/aqi.jpg';
@@ -15,31 +14,19 @@ const Portfolio = () => {
   );
 };
 
-const Header = React.memo(() => {
-  const controls = useAnimation();
-  const { ref, inView } = useInView({ triggerOnce: false });
-
-  React.useEffect(() => {
-    controls.start(inView ? 'visible' : 'hidden');
-  }, [controls, inView]);
-
+const Header = () => {
   return (
     <motion.div
       className="flex flex-col items-center justify-center header mb-4"
-      ref={ref}
-      initial="hidden"
-      animate={controls}
-      variants={{
-        hidden: { opacity: 0, y: -50 },
-        visible: { opacity: 1, y: 0 }
-      }}
-      transition={{ duration: 1, ease: 'easeInOut' }}
+      initial={{ opacity: 0, y: -50 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 1, ease: 'easeOut' }}
     >
       <h1 className="text-4xl font-bold text-gray-800 md:text-5xl">Portfolio</h1>
       <h2 className="text-1xl text-gray-600 mt-2 font-semibold">Some of my most recent projects</h2>
     </motion.div>
   );
-});
+};
 
 const Projects = () => {
   const projects = [
@@ -82,29 +69,16 @@ const Projects = () => {
   );
 };
 
-const Project = React.memo(({ project, index }) => {
-  const controls = useAnimation();
-  const { ref, inView } = useInView({ triggerOnce: false });
-
-  React.useEffect(() => {
-    controls.start(inView ? 'visible' : 'hidden');
-  }, [controls, inView]);
-
+const Project = ({ project, index }) => {
   return (
     <motion.div 
       className="project relative rounded shadow"
-      ref={ref}
-      initial="hidden"
-      animate={controls}
-      variants={{
-        hidden: { opacity: 0, x: index % 2 === 0 ? -100 : 100 },
-        visible: { opacity: 1, x: 0 }
-      }}
-      transition={{ duration: 1, ease: 'easeInOut' }}
-      style={{ willChange: 'transform, opacity' }}
+      initial={{ opacity: 0, scale: 0.9 }}
+      whileInView={{ opacity: 1, scale: 1 }}
+      transition={{ duration: 0.5, delay: index * 0.1, ease: 'easeOut' }}
     >
       <a href={project.link} target="_blank" rel="noopener noreferrer">
-        <p className='border-3 pl-4 bg-teal-700 font-bold text-white  w-56 rounded-md'>{project.title}</p>
+        <p className='border-3 pl-4 bg-teal-700 font-bold text-white w-56 rounded-md'>{project.title}</p>
         <img
           src={project.image}
           alt={project.title}
@@ -117,6 +91,6 @@ const Project = React.memo(({ project, index }) => {
       </a>
     </motion.div>
   );
-});
+};
 
 export default Portfolio;
