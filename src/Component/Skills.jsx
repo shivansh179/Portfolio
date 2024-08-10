@@ -20,8 +20,6 @@ const Skills = () => {
     { name: 'Bootstrap', progress: 90 },
     { name: 'TypeScript', progress: 90 },
     { name: 'Data Structures', progress: 90 },
-    { name: 'Data Structures', progress: 90 },
-    { name: 'Data Structures', progress: 90 },
   ];
 
   return (
