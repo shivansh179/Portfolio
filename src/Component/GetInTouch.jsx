@@ -37,7 +37,7 @@ const ContactInfo = () => {
         <p className="text-white mb-4">
           I enjoy discussing new projects and design challenges. Please share as much info as possible so we can get the most out of our first catch-up.
         </p>
-        <p className="text-white mb-4">Living In: Malikanput, Veerbhanpur, Jaunpur 222109</p>
+        <p className="text-white mb-4">Living In: Malikanpur, Veerbhanpur, Jaunpur 222109</p>
         <p className="text-white">Call: (+91) 6387427935</p>
       </div>
       <div className="flex flex-row md:gap-10 gap-3  flex-wrap md:flex-row"> {/* Added flex-wrap for smaller screens */}
