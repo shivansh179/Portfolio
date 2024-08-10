@@ -30,7 +30,7 @@ const ContactPage = () => {
 
 const ContactInfo = () => {
   return (
-    <div className="contact-info w-full md:w-1/2 px-4 gap-20 mb-8  flex flex-col md:gap-56">
+    <div className="contact-info w-full md:w-1/2 px-9 gap-20 mb-8  flex flex-col md:gap-56">
       <div>
         <Toaster />
         <h1 className="text-4xl font-bold text-white mb-4">Let's get in touch</h1>
@@ -41,11 +41,11 @@ const ContactInfo = () => {
         <p className="text-white">Call: (+91) 6387427935</p>
       </div>
       <div className="flex flex-row md:gap-10 gap-3  flex-wrap md:flex-row"> {/* Added flex-wrap for smaller screens */}
-        <a href="https://github.com/shivansh179" target="blank"><FaGithub className="text-4xl text-black" /></a>
-        <a href="https://www.linkedin.com/in/shivansh-shukla-01a139234/" target="blank"><FaLinkedin className="text-4xl text-black" /></a>
-        <a href="https://www.instagram.com/shuklajiii_25/?next=https%3A%2F%2Fwww.instagram.com%2Freels%2FC52NnCrPORm%2F%3F__coig_login%3D1 " target="blank"><FaInstagram className="text-4xl text-black" /></a>
-        <a href="https://x.com/Shivansh751829" target="blank"><FaTwitter className="text-4xl text-black" /></a>
-        <a href="https://www.geeksforgeeks.org/user/shivansh_shukla7935/?utm_source=geeksforgeeks&utm_medium=my_profile&utm_campaign=auth_user" target="blank"><SiGeeksforgeeks className="text-4xl text-black" /></a>
+        <a href="https://github.com/shivansh179" target="blank"><FaGithub className="text-4xl text-white" /></a>
+        <a href="https://www.linkedin.com/in/shivansh-shukla-01a139234/" target="blank"><FaLinkedin className="text-4xl text-white" /></a>
+        <a href="https://www.instagram.com/shuklajiii_25/?next=https%3A%2F%2Fwww.instagram.com%2Freels%2FC52NnCrPORm%2F%3F__coig_login%3D1 " target="blank"><FaInstagram className="text-4xl text-white" /></a>
+        <a href="https://x.com/Shivansh751829" target="blank"><FaTwitter className="text-4xl text-white" /></a>
+        <a href="https://www.geeksforgeeks.org/user/shivansh_shukla7935/?utm_source=geeksforgeeks&utm_medium=my_profile&utm_campaign=auth_user" target="blank"><SiGeeksforgeeks className="text-4xl text-white" /></a>
       </div>
     </div>
   );
@@ -53,7 +53,7 @@ const ContactInfo = () => {
 
 const EstimateForm = ({ sendEmail }) => {
   return (
-    <div className="estimate-form w-max md:w-1/2 px-4">
+    <div className="estimate-form w-max md:w-1/2 px-4 ">
       <h1 className="text-4xl font-bold text-white mb-4">Estimate your Project</h1>
       <form className="space-y-4" onSubmit={sendEmail}>
         <div>

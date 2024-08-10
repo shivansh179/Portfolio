@@ -4,7 +4,7 @@ import { GrMysql } from "react-icons/gr";
 
 const Services = () => {
   return (
-    <div className="bg-gray-100 py-16">
+    <div className="bg-gray-100 py-13 px-3">
       <div className="text-center mb-12">
         <span className="bg-teal-700 text-white py-1 px-3 rounded-full text-sm font-bold">What I Do?</span>
         <h2 className="text-4xl font-bold mt-4">How I can help your next project</h2>

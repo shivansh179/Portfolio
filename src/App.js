@@ -15,10 +15,12 @@ function App() {
     <div className="bg-teal-700 " id="one">
     
      <Intro/>
-     <section id="AboutUs" className="  bg-gray-100 p-8">
+     <section id="AboutUs" className="bg-gray-100 min-h-screen">
         <AboutUs/>
       </section>
-     <Project/>
+      <section >
+          <Project/>
+     </section>
      <section id="resume" className="  bg-gray-100 ">
          <Resume/>      
       </section>

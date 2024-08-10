@@ -12,23 +12,23 @@ const Intro = () => {
   return (
     <div className="min-h-screen bg-teal-700 flex flex-col gap-8 p-4 relative">
       <header className="w-full flex justify-between items-center px-4 md:px-8 max-w-6xl mx-auto">
-        <h1 className="text-xl md:text-2xl font-bold">PORTFOLIO</h1>
+        <h1 className="text-xl md:text-2xl text-white font-bold">PORTFOLIO</h1>
         <div className="space-x-4 flex items-center">
           <a href="tel:060444434444" className="text-sm md:text-xl hidden sm:inline">📞 (+91) 6387427935</a>
-          <button className="text-xl md:hidden" onClick={toggleMenu}>☰</button>
+          <button className="text-xl text-white md:hidden" onClick={toggleMenu}>☰</button>
         </div>
       </header>
       <main className="flex flex-col md:flex-row justify-around items-center mt-8 space-y-8 md:space-y-0 md:space-x-8 max-w-6xl mx-auto text-center md:text-left md:gap-44">
         <div className="w-full md:w-1/2">
-          <h2 className="text-3xl md:text-4xl font-bold">HI, I'M A Web</h2>
-          <h1 className="text-4xl md:text-6xl font-bold">DEVELOPER</h1>
-          <p className="text-lg md:text-xl mt-4">based in India, Delhi.</p>
+          <h2 className="text-3xl md:text-4xl text-white font-bold">HI, I'M A Web</h2>
+          <h1 className="text-4xl md:text-6xl text-white font-bold">DEVELOPER</h1>
+          <p className="text-lg md:text-xl text-white mt-4">based in India, Delhi.</p>
           <div className="md:space-x-4 gap-4 mt-4 flex flex-col md:flex-row items-center md:justify-start">
             <Link to="detailed-projects" smooth={true}>
-              <button className="bg-black text-white px-4 py-2 rounded w-full md:w-auto">View My Works</button>
+              <button className="bg-black text-white px-8 py-2 rounded w-full md:w-auto">View My Works</button>
             </Link>
             <Link to="get-in-touch" smooth={true}>
-              <button className="border border-black px-4 py-2 rounded w-full md:w-auto">Contact Me</button>
+              <button className="border-2 border-black font-bold px-10 py-2 text-black rounded w-full md:w-auto">Contact Me</button>
             </Link>
           </div>
         </div>

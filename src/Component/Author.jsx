@@ -4,7 +4,7 @@ import { Link } from 'react-scroll'; // Assuming internal scrolling within your 
 const Author = () => {
   return (
     <div className="flex flex-col items-center bg-teal-700 w-full py-4">
-      <p className="author-text font-bold text-center mb-0">
+      <p className="author-text font-bold text-center mb-0 px-4">
         Created using{' '}
         <Link
           href="https://reactjs.org/"

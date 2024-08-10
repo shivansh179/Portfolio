@@ -32,7 +32,7 @@ const Header = () => {
       transition={{ duration: 1, ease: 'easeInOut' }}
     >
       <p className="text-3xl font-medium text-teal-700">About Me</p>
-      <p className="text-5xl font-bold text-black">Know Me More</p>
+      <p className="md:text-5xl md:font-bold text-3xl font-bold mt-4 md:text-black">Know Me More</p>
     </motion.div>
   );
 };
@@ -51,7 +51,7 @@ const Content = () => {
   return (
     <div className="flex items-center md:flex-row flex-col mt-10">
       <motion.div
-        className="w-600 mt-10"
+        className="mt-10 md:flex md:flex-col md:justify-center md:items-start items-center text-center md:text-left"
         ref={textRef}
         initial="hidden"
         animate={textControls}
@@ -61,11 +61,13 @@ const Content = () => {
         }}
         transition={{ duration: 1, ease: 'easeInOut' }}
       >
-        <div className="font-bold text-3xl">
-          Hi, I'm <span className="text-4xl font-extrabold text-teal-700">Shivansh Shukla</span>
+        <div className="md:font-bold md:text-3xl flex flex-col justify-center md:items-start items-center text-center md:text-left">
+          <span className="font-bold text-3xl">Hi, I'm</span>
+          <span className="text-4xl font-extrabold mt-1 text-teal-700">Shivansh Shukla</span>
         </div>
-        <div className="text-xl font-medium mt-5 md:max-w-screen-sm md:mr-64">
-          I'm a designer & developer with a passion for web design and data structures. I enjoy developing simple, clean, and slick websites that provide real value to the end user and also I love solving data structure problems. I have created multiple major and minor projects for my learning and showcase. Delivering work within time which meets mine timeline is my motto.
+
+        <div className="text-xl font-medium mt-3 md:text-left md:max-w-screen-sm md:mr-64">
+          I'm a designer & developer with a passion for web design and data structures. I enjoy developing simple, clean, and slick websites that provide real value to the end user and also I love solving data structure problems. I have created multiple major and minor projects for my learning and showcase. Delivering work within time which meets my timeline is my motto.
         </div>
       </motion.div>
       <motion.div
