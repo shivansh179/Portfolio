@@ -38,14 +38,29 @@ const ContactInfo = () => {
           I enjoy discussing new projects and design challenges. Please share as much info as possible so we can get the most out of our first catch-up.
         </p>
         <p className="text-white mb-4">Living In: Malikanpur, Veerbhanpur, Jaunpur 222109</p>
-        <p className="text-white">Call: (+91) 6387427935</p>
+        <a
+          href="tel:6387427935"
+          className="text-white animate-pulse transition duration-500 ease-in-out hover:text-blue-900"
+        >
+          Call: (+91) 6387427935
+        </a>
       </div>
-      <div className="flex flex-row md:gap-10 gap-3  flex-wrap md:flex-row"> {/* Added flex-wrap for smaller screens */}
-        <a href="https://github.com/shivansh179" target="blank"><FaGithub className="text-4xl text-white" /></a>
-        <a href="https://www.linkedin.com/in/shivansh-shukla-01a139234/" target="blank"><FaLinkedin className="text-4xl text-white" /></a>
-        <a href="https://www.instagram.com/shuklajiii_25/?next=https%3A%2F%2Fwww.instagram.com%2Freels%2FC52NnCrPORm%2F%3F__coig_login%3D1 " target="blank"><FaInstagram className="text-4xl text-white" /></a>
-        <a href="https://x.com/Shivansh751829" target="blank"><FaTwitter className="text-4xl text-white" /></a>
-        <a href="https://www.geeksforgeeks.org/user/shivansh_shukla7935/?utm_source=geeksforgeeks&utm_medium=my_profile&utm_campaign=auth_user" target="blank"><SiGeeksforgeeks className="text-4xl text-white" /></a>
+      <div className="flex flex-row md:gap-10 gap-3  flex-wrap md:flex-row">
+        <a href="https://github.com/shivansh179" target="blank">
+          <FaGithub className="text-4xl text-white" />
+        </a>
+        <a href="https://www.linkedin.com/in/shivansh-shukla-01a139234/" target="blank">
+          <FaLinkedin className="text-4xl text-white" />
+        </a>
+        <a href="https://www.instagram.com/shuklajiii_25/?next=https%3A%2F%2Fwww.instagram.com%2Freels%2FC52NnCrPORm%2F%3F__coig_login%3D1" target="blank">
+          <FaInstagram className="text-4xl text-white" />
+        </a>
+        <a href="https://x.com/Shivansh751829" target="blank">
+          <FaTwitter className="text-4xl text-white" />
+        </a>
+        <a href="https://www.geeksforgeeks.org/user/shivansh_shukla7935/?utm_source=geeksforgeeks&utm_medium=my_profile&utm_campaign=auth_user" target="blank">
+          <SiGeeksforgeeks className="text-4xl text-white" />
+        </a>
       </div>
     </div>
   );
