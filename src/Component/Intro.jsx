@@ -41,14 +41,14 @@ const Intro = () => {
         </div>
       </main>
       <nav className={`fixed top-0 left-0 w-full h-full bg-black bg-opacity-75 flex flex-col items-center justify-center space-y-4 transition-transform duration-500 ease-out ${menuOpen ? 'translate-y-0 opacity-100' : '-translate-y-full opacity-0'}`}>
-        <Link href="AboutUs" smooth={true} duration={500} className="text-white text-2xl cursor-pointer" onClick={toggleMenu}>About Me</Link>
-        <Link href="projects" smooth={true} duration={500} className="text-white text-2xl cursor-pointer" onClick={toggleMenu}>Projects</Link>
-        <Link href="resume" smooth={true} duration={500} className="text-white text-2xl cursor-pointer" onClick={toggleMenu}>Resume</Link>
-        <Link href="skills" smooth={true} duration={500} className="text-white text-2xl cursor-pointer" onClick={toggleMenu}>Skills</Link>
-        <Link href="detailed-projects" smooth={true} duration={500} className="text-white text-2xl cursor-pointer" onClick={toggleMenu}>Detailed Projects</Link>
-        <Link href="get-in-touch" smooth={true} duration={500} className="text-white text-2xl cursor-pointer" onClick={toggleMenu}>Hire Me</Link>
-        <Link href="get-in-touch" smooth={true} duration={500} className="text-white text-2xl cursor-pointer" onClick={toggleMenu}>Get In Touch</Link>
-        <Link href="#" onClick={toggleMenu} className="text-white text-2xl cursor-pointer">Close</Link>
+        <Link to="AboutUs" smooth={true} duration={500} className="text-white text-2xl cursor-pointer" onClick={toggleMenu}>About Me</Link>
+        <Link to="projects" smooth={true} duration={500} className="text-white text-2xl cursor-pointer" onClick={toggleMenu}>Projects</Link>
+        <Link to="resume" smooth={true} duration={500} className="text-white text-2xl cursor-pointer" onClick={toggleMenu}>Resume</Link>
+        <Link to="skills" smooth={true} duration={500} className="text-white text-2xl cursor-pointer" onClick={toggleMenu}>Skills</Link>
+        <Link to="detailed-projects" smooth={true} duration={500} className="text-white text-2xl cursor-pointer" onClick={toggleMenu}>Detailed Projects</Link>
+        <Link to="get-in-touch" smooth={true} duration={500} className="text-white text-2xl cursor-pointer" onClick={toggleMenu}>Hire Me</Link>
+        <Link to="get-in-touch" smooth={true} duration={500} className="text-white text-2xl cursor-pointer" onClick={toggleMenu}>Get In Touch</Link>
+        <Link to="#" onClick={toggleMenu} className="text-white text-2xl cursor-pointer">Close</Link>
       </nav>
     </div>
   );

@@ -51,7 +51,7 @@ const Content = () => {
   return (
     <div className="flex items-center md:flex-row flex-col mt-10">
       <motion.div
-        className="mt-10 md:flex md:flex-col md:justify-center md:items-start items-center text-center md:text-left"
+        className="mt-10 md:flex md:flex-col   md:items-start items-center text-center md:text-left"
         ref={textRef}
         initial="hidden"
         animate={textControls}
@@ -61,7 +61,7 @@ const Content = () => {
         }}
         transition={{ duration: 1, ease: 'easeInOut' }}
       >
-        <div className="md:font-bold md:text-3xl flex flex-col justify-center md:items-start items-center text-center md:text-left">
+        <div className="md:font-bold md:text-3xl flex flex-col   md:items-start items-center text-center md:text-left">
           <span className="font-bold text-3xl">Hi, I'm</span>
           <span className="text-4xl font-extrabold mt-1 text-teal-700">Shivansh Shukla</span>
         </div>

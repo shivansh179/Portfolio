@@ -21,7 +21,7 @@ const ContactPage = () => {
   };
 
   return (
-    <div className="contact-page bg-teal-700 min-h-screen  mt-5 flex flex-wrap justify-center items-center">
+    <div className="contact-page bg-teal-700 min-h-screen  mt-5 flex flex-wrap   items-center">
       <ContactInfo />
       <EstimateForm sendEmail={sendEmail} />
     </div>
